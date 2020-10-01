@@ -242,9 +242,3 @@
     aos_init();
   });
 })(jQuery);
-
-//preloading
-var preloader = document.getElementById("loading");
-function stopPreloader() {
-  preloader.style.display = "none";
-}
