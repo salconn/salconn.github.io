@@ -912,11 +912,14 @@ section {
   transition: ease-in-out 0.4s;
   border-radius: 5px;
 }
-
+.card-title {
+  color: #313030;
+}
 .values .card-title {
+  font-size: 22px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 15px;
+  margin-top: 10px;
 }
 
 .values .card-title a {
