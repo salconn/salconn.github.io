@@ -1,3 +1,44 @@
+@keyframes typewriter {
+  0%,
+  100% {
+    width: 0;
+  }
+  20%,
+  80% {
+    width: 14.5em;
+  }
+}
+
+@keyframes caret {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.type {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewriter;
+  display: inline-block;
+  position: relative;
+  animation-duration: 10s;
+  animation-timing-function: steps(25, end);
+  animation-iteration-count: infinite;
+}
+
+.type::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #313030;
@@ -496,11 +537,11 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
-  font-weight: 500;
+  font-size: 35px;
+  font-weight: 550;
   margin-bottom: 20px;
   padding-bottom: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   color: #635551;
 }
 
